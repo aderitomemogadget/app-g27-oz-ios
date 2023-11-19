@@ -1,0 +1,26 @@
+{
+  "name": "HiQi",
+  "version": "1.4.4",
+  "description": "HiQi app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "memogadget",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aderitomemogadget/g27-ios.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aderitomemogadget/g27-ios/issues"
+  },
+  "homepage": "https://github.com/aderitomemogadget/g27-ios#readme",  
+  "ios": {
+      "supportsTablet": true
+    },
+
+  "cordova": {
+    "plugins": {}
+  }
+}
