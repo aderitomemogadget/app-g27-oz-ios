@@ -27,7 +27,7 @@ function verificaPermissao()
 	{
 		$.ajax({
 			type:'POST',
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:true,
 			timeout:3000,
 			data:{'type':'verificaPermissao','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
@@ -74,7 +74,7 @@ function backButtonByPermission()
 	{
 		$.ajax({
 			type:'POST',
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			timeout:3000,
 			data:{'type':'verificaPermissao','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
@@ -108,7 +108,7 @@ function homeButtonByPermission()
 	{
 		$.ajax({
 			type:'POST',
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			timeout:3000,
 			data:{'type':'verificaPermissao','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
@@ -138,7 +138,7 @@ function registo1_step1()
 	$('#registo-2').html('');
 	$.ajax({
 		type:'POST',
-		url:globalUrl+'admin_hiqi2/logins.php',
+		url:globalUrl+'admin_oz/logins.php',
 		async:false,
 		timeout:10000,
 		data:{'type':'registo1_step1','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
@@ -167,7 +167,7 @@ function registo2_step1()
 	$('#registo-1').html('');
 	$.ajax({
 		type:'POST',
-		url:globalUrl+'admin_hiqi2/logins.php',
+		url:globalUrl+'admin_oz/logins.php',
 		async:false,
 		timeout:10000,
 		data:{'type':'registo2_step1','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
@@ -261,7 +261,7 @@ function registo1_step2()
 
 	$.ajax({
 		type:'POST',
-		url:globalUrl+'admin_hiqi2/logins.php',
+		url:globalUrl+'admin_oz/logins.php',
 		async:false,
 		timeout:10000,
 		data:{'type':'registo1_step2','condutor_nome':condutor_nome,'condutor_email':condutor_email,'indicativo':indicativo,'telemovel':telemovel,'termos1':termos1,'termos2':termos2,'termos3':termos3,'morada':morada,'codpos1':codpos1,'codpos2':codpos2,'nif':nif,'combustivel':combustivel,'matricula':matricula,'prof':prof,'voucher':voucher,'dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
@@ -370,7 +370,7 @@ function registo2_step2()
 
 	$.ajax({
 		type:'POST',
-		url:globalUrl+'admin_hiqi2/logins.php',
+		url:globalUrl+'admin_oz/logins.php',
 		async:false,
 		timeout:10000,
 		data:{'type':'registo2_step2','condutor_nome':condutor_nome,'condutor_email':condutor_email,'empresa_nome':empresa_nome,'certidao':certidao,'forma_pagamento':forma_pagamento,'voucher':voucher,'indicativo':indicativo,'telemovel':telemovel,'termos1':termos1,'termos2':termos2,'termos3':termos3,'morada':morada,'codpos1':codpos1,'codpos2':codpos2,'nif':nif,'nif2':nif2,'combustivel':combustivel,'matricula':matricula,'prof':prof,'dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
@@ -408,7 +408,7 @@ function showTutorial()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			data:{'type':'getTutorial','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
 			dataType:'html',
 			success:function(data)
@@ -441,7 +441,7 @@ function show_botao_notificacoes()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			data:{'type':'getNotificacoes','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
 			dataType:'html',
@@ -470,7 +470,7 @@ function notifyme()
 	$.ajax({
 		type:'POST',
 		timeout:3000,
-		url:globalUrl+'admin_hiqi2/logins.php',
+		url:globalUrl+'admin_oz/logins.php',
 		data:{'type':'update_notificacoes','dp':(new Date()).getTime(),'checked':ck,'token':window.localStorage.getItem("token") },
 		dataType:'html',
 		success:function(data)
@@ -497,7 +497,7 @@ function show_botao_tutorial()
 		$.ajax({
 			type:'POST',
 			timeout:3000,
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			data:{'type':'getTutorial','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
 			dataType:'html',
@@ -523,7 +523,7 @@ function tutorialme()
 	$.ajax({
 		type:'POST',
 		timeout:3000,
-		url:globalUrl+'admin_hiqi2/logins.php',
+		url:globalUrl+'admin_oz/logins.php',
 		data:{'type':'update_tutorial','dp':(new Date()).getTime(),'checked':ck,'token':window.localStorage.getItem("token") },
 		dataType:'html',
 		success:function(data)
@@ -547,7 +547,7 @@ function show_botao_pagar_loja()
 		$.ajax({
 			type:'POST',
 			timeout:3000,
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			data:{'type':'getPagarLoja','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
 			dataType:'html',
@@ -576,7 +576,7 @@ function pagar_loja()
 	$.ajax({
 		type:'POST',
 		timeout:3000,
-		url:globalUrl+'admin_hiqi2/logins.php',
+		url:globalUrl+'admin_oz/logins.php',
 		data:{'type':'update_pagar_loja','dp':(new Date()).getTime(),'checked':ck,'token':window.localStorage.getItem("token") },
 		dataType:'html',
 		success:function(data)
@@ -597,7 +597,7 @@ function ver_euros()
 	$.ajax({
 		type:'POST',
 		timeout:3000,
-		url:globalUrl+'admin_hiqi2/logins.php',
+		url:globalUrl+'admin_oz/logins.php',
 		data:{'type':'update_ver_euros','dp':(new Date()).getTime(),'checked':ck,'token':window.localStorage.getItem("token") },
 		dataType:'html',
 		success:function(data)
@@ -616,7 +616,7 @@ function altera_matricula(e,matricula,IDb)
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/logins.php',
+		url:globalUrl+'admin_oz/logins.php',
 		data:{'type':'update_matricula','dp':(new Date()).getTime(),'checked':ck,'token':window.localStorage.getItem("token"),'IDb':IDb,'matricula':matricula },
 		dataType:'html',
 		success:function(data)
@@ -787,7 +787,7 @@ function infoLogin()
 		var html_limites = '';
 		$.ajax({
 			type:'POST',
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			timeout:3000,
 			data:{'type':'getInfoLogin','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token")},
@@ -875,7 +875,7 @@ function confirmarPurchase(AuthorizationToken='',RequestID=0)
 	$.ajax({
 		type:'POST',
 		timeout:3000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'confirmarPurchase','dp':(new Date()).getTime(),'AuthorizationToken':AuthorizationToken,'telemovel':window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 		dataType:'html',
@@ -897,7 +897,7 @@ function getAbastecimentos()
 	$.ajax({
 		type:'POST',
 		timeout:3000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'getAbastecimentos','dp':(new Date()).getTime(),'telemovel':window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 		dataType:'json',
@@ -945,7 +945,7 @@ function saveRaioPesquisa()
 
 		$.ajax({
 			type:'POST',
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			timeout:10000,
 			data:{'type':'saveRaioPesquisa','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token"),"raio_pesquisa":raio_pesquisa},
@@ -966,7 +966,7 @@ function getListaPontosAbastecimento(e)
 	var html = '';
 	$.ajax({
 		type:'POST',
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:true,
 		timeout: 30000,
 		data:{'type':'getListaPontosAbastecimento','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token"),'lat':window.localStorage.getItem("lat"),'lng':window.localStorage.getItem("lng")},
@@ -991,7 +991,7 @@ function showSliderPostos(e,vpw)
 	var html = '';
 	$.ajax({
 		type:'POST',
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:true,
 		timeout: 30000,
 		data:{'type':'showSliderPostos','dp':(new Date()).getTime(),'pagar_loja':window.localStorage.getItem("pagar_loja"),'telemovel' :window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token"),'lat':window.localStorage.getItem("lat"),'lng':window.localStorage.getItem("lng")},
@@ -1037,7 +1037,7 @@ function carrega_saldo_mbway()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/mbway.php',
+			url:globalUrl+'admin_oz/mbway.php',
 			async:false,
 			data:{
 				'type':'carregaSaldoMbway',
@@ -1102,7 +1102,7 @@ function carrega_saldo_mbway_3()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/mbway.php',
+			url:globalUrl+'admin_oz/mbway.php',
 			async:false,
 			data:{
 				'type':'carregaSaldoMbway',
@@ -1163,7 +1163,7 @@ function showCarregarSaldoMbway()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/mbway.php',
+			url:globalUrl+'admin_oz/mbway.php',
 			async:false,
 			data:{'type':'showCarregarSaldoMbway','dp':(new Date()).getTime(),'telemovel' :window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token"),'stationID':StationID},
 			dataType:'html',
@@ -1192,7 +1192,7 @@ function showCarregarSaldoMbwayMenu()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/mbway.php',
+		url:globalUrl+'admin_oz/mbway.php',
 		async:false,
 		data:{'type':'showCarregarSaldoMbwayMenu','dp':(new Date()).getTime(),'telemovel' :window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 		dataType:'html',
@@ -1218,7 +1218,7 @@ function showPontoAbastecimento(StationID = 0)
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'getListaPontosAbastecimento','dp':(new Date()).getTime(),'StationID':StationID,'cliente_mbway' :window.localStorage.getItem("cliente_mbway"),'telemovel' :window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token"),},
 			dataType:'html',
@@ -1246,7 +1246,7 @@ function showPontoAbastecimento_async(StationID=0,e)
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:true,
 			data:{'type':'getListaPontosAbastecimento','dp':(new Date()).getTime(),'StationID':StationID,'cliente_mbway' :window.localStorage.getItem("cliente_mbway"),'telemovel' :window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token"),},
 			dataType:'html',
@@ -1287,7 +1287,7 @@ function send_msg()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:true,
 		data:{'type':'novaMensagem','msg':msg,'dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1313,7 +1313,7 @@ function showMensagens()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'showMensagens','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1335,7 +1335,7 @@ function novaMensagem()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'novaMensagem','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1357,7 +1357,7 @@ function Account()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/info.php',
+		url:globalUrl+'admin_oz/info.php',
 		async:false,
 		data:{'type':'Account','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1379,7 +1379,7 @@ function Condutores()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Condutores','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1402,7 +1402,7 @@ function update_permissoes(n,IDb)
 	$.ajax({
 		type:"POST",
 		timeout:3000,
-		url:globalUrl+"admin_hiqi2/logins.php",
+		url:globalUrl+"admin_oz/logins.php",
 		data:{"type":"update_Permissao"+n,"dp":(new Date()).getTime(),"IDb":IDb,"checked":ck,"token":window.localStorage.getItem("token") },
 		dataType:"html",
 		success:function(data){},
@@ -1428,7 +1428,7 @@ function Condutores_edita(IDb)
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Condutores_edita','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token'),'IDb':IDb },
 		dataType:'html',
@@ -1450,7 +1450,7 @@ function Condutores_add()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Condutores_add','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1472,7 +1472,7 @@ function Condutores_remove(IDb)
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Condutores_remove','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token'),'IDb':IDb },
 		dataType:'html',
@@ -1494,7 +1494,7 @@ function Veiculos_add()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Veiculos_add','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1516,7 +1516,7 @@ function Veiculos_add2()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Veiculos_add2','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1538,7 +1538,7 @@ function Veiculos()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Veiculos','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1560,7 +1560,7 @@ function Veiculos_edita(IDb)
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Veiculos_edita','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token'),'IDb':IDb },
 		dataType:'html',
@@ -1582,7 +1582,7 @@ function Veiculos_remove(IDb)
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Veiculos_remove','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token'),'IDb':IDb },
 		dataType:'html',
@@ -1605,7 +1605,7 @@ function Financeira()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Financeira','dp':(new Date()).getTime(),'valor_postoPAIS':valor_postoPAIS,'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1640,7 +1640,7 @@ function Extrato()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Extrato','Extract_No':Extract_No,'valor_postoPAIS':valor_postoPAIS,'dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1664,7 +1664,7 @@ function Faturas()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Faturas','dp':(new Date()).getTime(),'valor_postoPAIS':valor_postoPAIS,'valor_postoPAIS':valor_postoPAIS,'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1687,7 +1687,7 @@ function FaturasPagar()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'FaturasPagar','dp':(new Date()).getTime(),'valor_postoPAIS':valor_postoPAIS,'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1712,7 +1712,7 @@ function Fatura()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Fatura','Extract_No':Extract_No,'No':No,'dp':(new Date()).getTime(),'valor_postoPAIS':valor_postoPAIS,'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1737,7 +1737,7 @@ function FaturasPagamentos()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'HistoricoPagamentosFaturas','P_ID':P_ID,'P_Tipo':P_Tipo,'dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		
@@ -1760,7 +1760,7 @@ function Configuracoes()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'Configuracoes','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1786,7 +1786,7 @@ function showMensagem(mensagem_id)
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'showMensagem','dp':(new Date()).getTime(),'mensagem':mensagem_id,'token':window.localStorage.getItem('token') },
 			dataType:'html',
@@ -1832,7 +1832,7 @@ function showConsumos()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'showConsumos','dp':(new Date()).getTime(),'telemovel':telemovel,'token':window.localStorage.getItem('token') },
 			dataType:'html',
@@ -1862,7 +1862,7 @@ function showReservations()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{
 				'type':'showReservations',
@@ -1898,7 +1898,7 @@ function showPagamentos()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{
 				'type':'showPagamentos',
@@ -1932,7 +1932,7 @@ function showNavigation()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/maps.php',
+		url:globalUrl+'admin_oz/maps.php',
 		async:false,
 		data:{'type':'showNavigation','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token') },
 		dataType:'html',
@@ -1958,7 +1958,7 @@ function showPayments(e)
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:true,
 			data:{'type':'showPagamentos','dp':(new Date()).getTime(),'telemovel':telemovel,'token':window.localStorage.getItem("token") },
 			dataType:'html',
@@ -1995,7 +1995,7 @@ function showPayments(e)
 			$.ajax({
 				type:'POST',
 				timeout:10000,
-				url:globalUrl+'admin_hiqi2/maps.php',
+				url:globalUrl+'admin_oz/maps.php',
 				async:false,
 				data:{'type':'getLatLng','dp':(new Date()).getTime(), 'token':window.localStorage.getItem("token") },
 				dataType:'json',
@@ -2020,7 +2020,7 @@ function showPayments(e)
 		$.ajax({
 				type:'POST',
 				timeout:10000,
-				url:globalUrl+'admin_hiqi2/maps.php',
+				url:globalUrl+'admin_oz/maps.php',
 				async:false,
 				data:{'type':'getCoorPostos','dp':(new Date()).getTime() },
 				dataType:'json',
@@ -2088,7 +2088,7 @@ function reloadPayments()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showPagamentos','dp':(new Date()).getTime(),'telemovel':telemovel,'token':window.localStorage.getItem("token") },
 			dataType:'html',
@@ -2124,7 +2124,7 @@ function reloadPaymentsPOS()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{'type':'showPagamentosPOS','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
 		dataType:'html',
@@ -2156,7 +2156,7 @@ function showAguardarPagamentosPOS()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{'type':'showAguardarPagamentosPOS','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token"),'IMEI':window.localStorage.getItem("IMEI") },
 		dataType:'html',
@@ -2177,7 +2177,7 @@ function showAguardarPagamentosClientePOS()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{
 			'type':'showAguardarPagamentosClientePOS',
@@ -2204,7 +2204,7 @@ function showAguardarPagamentosCallcenter()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{'type':'showAguardarPagamentosCallcenter','dp':(new Date()).getTime(),'pagamento-callcenter':window.localStorage.getItem("pagamento-callcenter") },
 		dataType:'html',
@@ -2239,7 +2239,7 @@ function reloadPaymentsPage()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{'type':'reloadPaymentsPage','dp':(new Date()).getTime(),'telemovel':window.localStorage.getItem("telemovel") },
 		dataType:'html',
@@ -2262,7 +2262,7 @@ function reloadPaymentsPageNovo(e)
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{'type':'reloadPaymentsPageNovo','dp':(new Date()).getTime(),'telemovel':window.localStorage.getItem("telemovel") },
 		dataType:'html',
@@ -2297,7 +2297,7 @@ function cancelarPaymentConfirmation_2()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{'type':'cancelarPaymentConfirmation','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token"),'telemovel':window.localStorage.getItem("telemovel"),'requestid':window.localStorage.getItem("requestid") },
 		dataType:'json',
@@ -2336,7 +2336,7 @@ function confirmPaymentValido()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{'type':'confirmPaymentValido','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token"),'telemovel':window.localStorage.getItem("telemovel"),'requestid':window.localStorage.getItem("requestid") },
 		dataType:'json',
@@ -2421,7 +2421,7 @@ function confirmPayment_2()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{'type':'confirmPayment','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token"),'telemovel':window.localStorage.getItem("telemovel"),'requestid':window.localStorage.getItem("requestid") },
 		dataType:'json',
@@ -2535,7 +2535,7 @@ function initiatePayment_2()
 
 	$.ajax({
 		type:'POST',
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:true,
 		data:{'type':'initiatePayment','kms':kms,'dp':(new Date()).getTime(),'telemovel':window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token") },
 		dataType:'json',
@@ -2585,7 +2585,7 @@ function showPaymentStandalone()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{'type':'showPaymentStandalone','dp':(new Date()).getTime(),'telemovel':window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token"),'requestid':window.localStorage.getItem("requestid") },
 		dataType:'html',
@@ -2627,7 +2627,7 @@ function gerarToken()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{'type':'gerarToken','dp':(new Date()).getTime(),'pagamento_pos':pagamento_pos,'postoCountry':postoCountry},
 		dataType:'html',
@@ -2650,7 +2650,7 @@ function resumoReserva(StationID = 0,reserva = '',kms= '',litros= '',total_abast
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{
 				'type':'reservar',
@@ -2699,7 +2699,7 @@ function cancelaReserva(StationID = '',ReservationNumber = 0,NameService = '',En
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'cancelaReserva','dp':(new Date()).getTime(),'StationID':StationID,'ReservationNumber':ReservationNumber,'NameService':NameService,'Entry_No':Entry_No,'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -2768,7 +2768,7 @@ function pesquisa_historico_pos(pesquisa='')
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:true,
 			data:{'type':'showHistoricoPagamentosPOS',telemovel:window.localStorage.getItem("telemovel"),'dp':(new Date()).getTime(),token:window.localStorage.getItem("token"),pesquisa:pesquisa },
 			dataType:'html',
@@ -2789,7 +2789,7 @@ function pesquisa_historico_callcenter(pesquisa='')
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:true,
 			data:{'type':'showHistoricoPagamentosCallcenter',telemovel:window.localStorage.getItem("telemovel"),'dp':(new Date()).getTime(),token:window.localStorage.getItem("token"),pesquisa:pesquisa },
 			dataType:'html',
@@ -2810,7 +2810,7 @@ function pesquisa_historico(pesquisa='')
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:true,
 			data:{'type':'showHistoricoGlobalFiltrado',telemovel:window.localStorage.getItem("telemovel"),'dp':(new Date()).getTime(),token:window.localStorage.getItem("token"),pesquisa:pesquisa },
 			dataType:'html',
@@ -2832,7 +2832,7 @@ function showHistoricoGlobal(e)
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:true,
 			data:{'type':'showHistoricoGlobal',telemovel:window.localStorage.getItem("telemovel"),'dp':(new Date()).getTime(),token:window.localStorage.getItem("token")},
 			dataType:'html',
@@ -2855,7 +2855,7 @@ function showHistoricoPagamentosPOS()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showHistoricoPagamentosPOS','dp':(new Date()).getTime(),token:window.localStorage.getItem("token"),IMEI:window.localStorage.getItem("IMEI") },
 			dataType:'html',
@@ -2877,7 +2877,7 @@ function showHistoricoPagamentosCallcenter()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showHistoricoPagamentosCallcenter','dp':(new Date()).getTime() },
 			dataType:'html',
@@ -2899,7 +2899,7 @@ function filtraHistorico(IMEI)
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'filtraHistorico','dp':(new Date()).getTime(),'IMEI':IMEI },
 			dataType:'html',
@@ -2992,7 +2992,7 @@ function showVerificarTokenCliente()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'showVerificarTokenCliente','dp':(new Date()).getTime()},
 			dataType:'html',
@@ -3015,7 +3015,7 @@ function showVerificaToken()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'showVerificaToken','dp':(new Date()).getTime()},
 			dataType:'html',
@@ -3042,7 +3042,7 @@ function valida_token()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'valida_posto','dp':(new Date()).getTime(),'IMEI':IMEI,'token_posto':token_posto,"postoCountry":postoCountry },
 			dataType:'html',
@@ -3088,7 +3088,7 @@ function showDefinicaoPosto()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'showDefinicaoPosto','dp':(new Date()).getTime(),'postoPOS':postoPOS },
 			dataType:'html',
@@ -3121,7 +3121,7 @@ function validaTelemovelAlterarMatricula()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			data:{'type':'verificaNumero','dp':(new Date()).getTime(),'telemovel':indicativo+telemovel },
 			dataType:'html',
@@ -3173,7 +3173,7 @@ function validaTelemovelAlterarLitros()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			data:{'type':'verificaNumero','dp':(new Date()).getTime(),'telemovel':indicativo+telemovel },
 			dataType:'html',
@@ -3225,7 +3225,7 @@ function validaTelemovelAlterarCartao()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			data:{'type':'verificaNumero','dp':(new Date()).getTime(),'telemovel':indicativo+telemovel },
 			dataType:'html',
@@ -3268,7 +3268,7 @@ function showIniciarPagamentoCallcenter()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showIniciarPagamentoCallcenter','dp':(new Date()).getTime() },
 			dataType:'html',
@@ -3294,7 +3294,7 @@ function showAlterarLitros()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showAlterarLitros','dp':(new Date()).getTime(),'Customer_Type':Customer_Type,'telemovel':indicativo+telemovel_pos },
 			dataType:'html',
@@ -3337,7 +3337,7 @@ function showAlterarCartao()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showAlterarCartao','dp':(new Date()).getTime(),'Customer_Type':Customer_Type,'telemovel':window.localStorage.getItem("indicativo")+window.localStorage.getItem("telemovel_pos") },
 			dataType:'html',
@@ -3359,7 +3359,7 @@ function showCriarCartao()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showCriarCartao','dp':(new Date()).getTime(),'Customer_Type':Customer_Type,'telemovel':window.localStorage.getItem("indicativo")+window.localStorage.getItem("telemovel_pos")  },
 			dataType:'html',
@@ -3381,7 +3381,7 @@ function showAlterarMatricula()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showAlterarMatricula','dp':(new Date()).getTime(),'Customer_Type':Customer_Type,'telemovel':window.localStorage.getItem("indicativo")+window.localStorage.getItem("telemovel_pos")  },
 			dataType:'html',
@@ -3404,7 +3404,7 @@ function showCriarMatricula()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showCriarMatricula','dp':(new Date()).getTime(),'Customer_Type':Customer_Type,'telemovel':window.localStorage.getItem("indicativo")+window.localStorage.getItem("telemovel_pos")  },
 			dataType:'html',
@@ -3447,7 +3447,7 @@ function showCriarMatriculaCartao()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showCriarMatriculaCartao','dp':(new Date()).getTime(),'telemovel':window.localStorage.getItem("indicativo2")+window.localStorage.getItem("telemovel_pos")  },
 			dataType:'html',
@@ -3471,7 +3471,7 @@ function showIniciarPagamento()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showIniciarPagamento','dp':(new Date()).getTime(),'postoPOS':postoPOS },
 			dataType:'html',
@@ -3494,7 +3494,7 @@ function alterarMatricula()
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		url:globalUrl+'admin_oz/pagamentos.php',
 		async:false,
 		data:{
 			'type':'alterarMatricula',
@@ -3542,7 +3542,7 @@ function criarMatricula()
 	$.ajax({
 				type:'POST',
 				timeout:10000,
-				url:globalUrl+'admin_hiqi2/pagamentos.php',
+				url:globalUrl+'admin_oz/pagamentos.php',
 				async:false,
 				data:{
 					'type':'criarMatricula',
@@ -3589,7 +3589,7 @@ function criarMatriculaCartao()
 	$.ajax({
 				type:'POST',
 				timeout:10000,
-				url:globalUrl+'admin_hiqi2/pagamentos.php',
+				url:globalUrl+'admin_oz/pagamentos.php',
 				async:false,
 				data:{
 					'type':'criarMatriculaCartao',
@@ -3632,7 +3632,7 @@ function verificaMatriculaProfessionalDiesel(matricula = '')
 	$.ajax({
 				type:'POST',
 				timeout:10000,
-				url:globalUrl+'admin_hiqi2/pagamentos.php',
+				url:globalUrl+'admin_oz/pagamentos.php',
 				async:false,
 				data:{
 					'type':'verificaMatriculaProfessionalDiesel',
@@ -3689,7 +3689,7 @@ function alterarCartao()
 		$.ajax({
 				type:'POST',
 				timeout:10000,
-				url:globalUrl+'admin_hiqi2/pagamentos.php',
+				url:globalUrl+'admin_oz/pagamentos.php',
 				async:false,
 				data:{
 					'type':'alterarCartao',
@@ -3780,7 +3780,7 @@ function criarCartao()
 		$.ajax({
 				type:'POST',
 				timeout:10000,
-				url:globalUrl+'admin_hiqi2/pagamentos.php',
+				url:globalUrl+'admin_oz/pagamentos.php',
 				async:false,
 				data:{
 					'type':'criarCartao',
@@ -3873,7 +3873,7 @@ function alterarLimites()
 		$.ajax({
 				type:'POST',
 				timeout:10000,
-				url:globalUrl+'admin_hiqi2/pagamentos.php',
+				url:globalUrl+'admin_oz/pagamentos.php',
 				async:false,
 				data:{'type':'alterarLimites','dp':(new Date()).getTime(),'Customer_Type':Customer_Type,'limite_diario':limite_diario,'limite_semanal':limite_semanal,'limite_mensal':limite_mensal,'telemovel':telemovel },
 				dataType:'json',
@@ -3924,7 +3924,7 @@ function requestToken()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'requestToken','dp':(new Date()).getTime(),'telemovel_callcenter':telemovel_callcenter },
 			dataType:'html',
@@ -3955,7 +3955,7 @@ function verificaLogin(telemovel = 0)
 	$.ajax({
 			type:'POST',
 			timeout:3000,
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			data:{'type':'verificaLogins','dp':(new Date()).getTime(),'telemovel':telemovel },
 			dataType:'html',
@@ -3993,7 +3993,7 @@ function iniciarPagamentoPOS()
 			$.ajax({
 				type:'POST',
 				timeout:10000,
-				url:globalUrl+'admin_hiqi2/pagamentos.php',
+				url:globalUrl+'admin_oz/pagamentos.php',
 				async:false,
 				data:{ 'type':'inserirPagamentoPOS',
 						'dp':(new Date()).getTime(),
@@ -4035,7 +4035,7 @@ function iniciarPagamentoPOS()
 			$.ajax({
 				type:'POST',
 				timeout:10000,
-				url:globalUrl+'admin_hiqi2/pagamentos.php',
+				url:globalUrl+'admin_oz/pagamentos.php',
 				async:true,
 				data:{ 'type':'inserirPagamentoTokenPOS',
 						'dp':(new Date()).getTime(),
@@ -4120,7 +4120,7 @@ function iniciarPagamentoCallcenter()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{ 'type':'pagarFrotaCallcenter',
 					'dp':(new Date()).getTime(),
@@ -4162,7 +4162,7 @@ function iniciarPagamentoCallcenter()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{ 'type':'pagarFrotaCallcenter',
 					'dp':(new Date()).getTime(),
@@ -4288,7 +4288,7 @@ function PagamentoCallcenterTentaNovamente(pagamento_id)
 	$.ajax({
 			type: 'POST',
 			timeout:10000,
-			url: globalUrl+'admin_hiqi2/pagamentos.php',
+			url: globalUrl+'admin_oz/pagamentos.php',
 			async: false,
 			data: {'type': 'pagarFrotaCallcenterTentaNovamente','dp':(new Date()).getTime(),'pagamento_id':pagamento_id},
 			dataType: 'html',
@@ -4309,7 +4309,7 @@ function PagamentoCallcenterCancela(pagamento_id)
 	$.ajax({
 			type: 'POST',
 			timeout:10000,
-			url: globalUrl+'admin_hiqi2/pagamentos.php',
+			url: globalUrl+'admin_oz/pagamentos.php',
 			async: false,
 			data: {'type': 'pagarFrotaCallcenterCancelar','dp':(new Date()).getTime(),'pagamento_id':pagamento_id},
 			dataType: 'html',
@@ -4332,7 +4332,7 @@ function showHomepagePage()
 	$.ajax({
 			type: 'POST',
 			timeout:10000,
-			url: globalUrl+'admin_hiqi2/logins.php',
+			url: globalUrl+'admin_oz/logins.php',
 			async: false,
 			data: {'type': 'showHomepagePage','dp':(new Date()).getTime(),telemovel: window.localStorage.getItem("telemovel"), 'token': window.localStorage.getItem("token")},
 			dataType: 'html',
@@ -4354,7 +4354,7 @@ function preencheProduto(postoPOS = 0,deviceNumber = 0)
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'preencheProduto','dp':(new Date()).getTime(),'postoPOS':postoPOS,'deviceNumber':deviceNumber },
 			dataType:'html',
@@ -4380,7 +4380,7 @@ function savePosto(posto= '',posto_txt= '',postoCountry='')
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{'type':'savePosto','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token'),'postoPOS':posto,'postoPOS_txt':posto_txt,'postoCountry':postoCountry },
 		dataType:'json',
@@ -4418,7 +4418,7 @@ function preencheLitrosMatricula(telemovel = 0,produto = '')
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'preencheLitrosMatricula','dp':(new Date()).getTime(),'telemovel':telemovel,'produto':produto,'postoPOS':postoPOS,'IMEI':IMEI,'postoCountry':postoCountry },
 			dataType:'json',
@@ -4481,7 +4481,7 @@ function atualiza_nome(telemovel = 0,produto = '',posto= '',postoCountry= '',pos
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'atualiza_nome','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token'),'telemovel':telemovel,'produto':produto,'postoPOS':postoPOS,'IMEI':IMEI,'postoCountry':postoCountry,'postoCode':postoCode },
 			dataType:'json',
@@ -4523,7 +4523,7 @@ function preencheLitrosMatriculaCallcenter(telemovel = 0,produto = '',posto= '',
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'preencheLitrosMatriculaCallcenter','dp':(new Date()).getTime(),'token':window.localStorage.getItem('token'),'telemovel':telemovel,'produto':produto,'postoPOS':postoPOS,'IMEI':IMEI,'postoCountry':postoCountry,'postoCode':postoCode },
 			dataType:'json',
@@ -4598,7 +4598,7 @@ function showHomepagePageGestor()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			data:{
 				'type':'showHomepagePageGestor',
@@ -4628,7 +4628,7 @@ function showCarregarSaldo()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'carregarSaldo','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4651,7 +4651,7 @@ function showVerSaldo()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'verSaldo','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4674,7 +4674,7 @@ function showInfoMatriculas()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'infoMatriculas','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4698,7 +4698,7 @@ function showInfoKms()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'infoKms','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4721,7 +4721,7 @@ function showInfoLimites()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'infoLimites','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4744,7 +4744,7 @@ function showInfoReservas()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'infoReservas','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4759,7 +4759,7 @@ function apoio_cliente()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'apoio_cliente','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4774,7 +4774,7 @@ function showInfoActualizarPagamentos()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'infoPagamentos','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4797,7 +4797,7 @@ function parcerias()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{
 				'type':'parcerias',
@@ -4824,7 +4824,7 @@ function showInfoSobreNos()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{
 				'type':'infoSobreNos',
@@ -4852,7 +4852,7 @@ function showInfoTermosLegais()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'infoTermosLegais','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4877,7 +4877,7 @@ function showInfoPoliticaPrivacidade()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'infoPoliticaPrivacidade','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4899,7 +4899,7 @@ function showInfoRGPD()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'infoRGPD','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4920,7 +4920,7 @@ function Screen1()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'screen1','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4938,7 +4938,7 @@ function Screen2()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'screen2','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4956,7 +4956,7 @@ function Screen3()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'screen3','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4974,7 +4974,7 @@ function Screen4()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'screen4','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -4992,7 +4992,7 @@ function Screen5()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:false,
 			data:{'type':'screen5','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -5010,7 +5010,7 @@ function showMudarPassword()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'mudarPassword','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -5035,7 +5035,7 @@ function showInfoDadosPessoais()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'infoDadosPessoais','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -5061,7 +5061,7 @@ function showInfoContactos()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/info.php',
+			url:globalUrl+'admin_oz/info.php',
 			async:false,
 			data:{'type':'infoContactos','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -5087,7 +5087,7 @@ function showDefinicoes()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/logins.php',
+			url:globalUrl+'admin_oz/logins.php',
 			async:false,
 			data:{'type':'showDefinicoes','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -5112,7 +5112,7 @@ function operacaoCancelada()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'operacaoCancelada','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token"),'pagamento_id':window.localStorage.getItem("pagamento_id")},
 			dataType:'html',
@@ -5135,7 +5135,7 @@ function getTokenByPagamentoID( pagamento_pos = 0)
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'getTokenByPagamentoID','dp':(new Date()).getTime(),'pagamento_pos':pagamento_pos },
 			dataType:'html',
@@ -5199,7 +5199,7 @@ function previewReserva(StationID = '',StationName = '',device_number = 0,Identi
 	$.ajax({
 		type:'POST',
 		timeout:10000,
-		url:globalUrl+'admin_hiqi2/actions.php',
+		url:globalUrl+'admin_oz/actions.php',
 		async:false,
 		data:{
 			'type':'verificaLimiteDiario',
@@ -5305,7 +5305,7 @@ function verificaPagamentos()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'verificaPagamentos','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token")},
 			dataType:'html',
@@ -5328,7 +5328,7 @@ function showResumoAbastecimento()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{'type':'showResumoAbastecimento','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token"),'telemovel':telemovel,'reserva_id':reserva_id},
 			dataType:'html',
@@ -5609,7 +5609,7 @@ function fazerPagamento()
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pgm_mbway/mbway.php',
+			url:globalUrl+'admin_oz/pgm_mbway/mbway.php',
 			async:false,
 			data:{
 				'type':'pagarMBway',
@@ -5646,7 +5646,7 @@ function fazerPagamento()
 		$.ajax({
 			type:'POST',
 			timeout:30000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{
 				'type':'pagarFrota',
@@ -5687,7 +5687,7 @@ function pagarFrotaPOS()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{
 				'type':'pagarFrotaPOS',
@@ -5714,7 +5714,7 @@ function pagarFrotaCallcenter()
 	$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/pagamentos.php',
+			url:globalUrl+'admin_oz/pagamentos.php',
 			async:false,
 			data:{
 				'type':'pagarFrotaCallcenter',
@@ -5747,7 +5747,7 @@ function verificaNotificacoesAbastecimentos(intervalID = 0)
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/actions.php',
+			url:globalUrl+'admin_oz/actions.php',
 			async:true,
 			data:{'type':'verificaNotificacoesAbastecimentos','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token"),'reserva_id':reserva_abastecida_id},
 			dataType:'html',
@@ -5791,7 +5791,7 @@ function verificaProximidade(destLat = '',destLng= '')
 		$.ajax({
 			type:'POST',
 			timeout:10000,
-			url:globalUrl+'admin_hiqi2/maps.php',
+			url:globalUrl+'admin_oz/maps.php',
 			async:false,
 			data:{'type':'getLatLng','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token") },
 			dataType:'json',

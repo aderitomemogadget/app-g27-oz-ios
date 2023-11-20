@@ -108,7 +108,7 @@ function showPosition(position)
 				{
 					$.ajax({
 							type: 'POST',
-							url: globalUrl+'admin_hiqi2/location.php',
+							url: globalUrl+'admin_oz/location.php',
 							async: true,
 							data: {
 								'type': 'location',
@@ -226,7 +226,7 @@ function getMarkersMapHomepage(raio_pesquisa = 0)
 	var json = '';
 	$.ajax({
 		type: 'POST',
-		url: globalUrl+'admin_hiqi2/actions.php',
+		url: globalUrl+'admin_oz/actions.php',
 		async: false,
 		data: {'type': 'getMarkersMapHomepage2','dp':(new Date()).getTime(),'token': window.localStorage.getItem("token")},
 		dataType: 'json',
@@ -246,7 +246,7 @@ function getMarkersMapNavegacao()
 	var json = '';
 	$.ajax({
 		type: 'POST',
-		url: globalUrl+'admin_hiqi2/maps.php',
+		url: globalUrl+'admin_oz/maps.php',
 		async: false,
 		data: {'type':'getMarkersMapNavegacao','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token")},
 		dataType: 'json',
@@ -266,7 +266,7 @@ function getMarkerStation(destLat = 0, destLng = 0)
 	var json = '';
 	$.ajax({
 		type: 'POST',
-		url: globalUrl+'admin_hiqi2/actions.php',
+		url: globalUrl+'admin_oz/actions.php',
 		async: false,
 		data: {'type':'getMarkerStation','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token"),'destLat':destLat,'destLng':destLng},
 		dataType: 'json',
