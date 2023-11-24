@@ -909,14 +909,14 @@ key_validar_btn['fr'] = '';
 key_validar_btn['de'] = '';
 key_validar_btn['nl'] = '';
 
-key_mensagem_trad['pt'] = 'A <b>HiQi</b> agradece a sua preferência e confiança!';
-key_mensagem_trad['es'] = '¡<b>HiQi</b> le agradece su preferencia y confianza!';
+key_mensagem_trad['pt'] = 'A <b>OZ Pay</b> agradece a sua preferência e confiança!';
+key_mensagem_trad['es'] = '¡<b>OZ Pay</b> le agradece su preferencia y confianza!';
 key_mensagem_trad['fr'] = '';
 key_mensagem_trad['de'] = '';
 key_mensagem_trad['nl'] = '';
 
-key_pin_label['pt'] = 'Introduza o seu <b>PIN HiQi</b>';
-key_pin_label['es'] = 'Introduce tu <b>PIN HiQi</b>';
+key_pin_label['pt'] = 'Introduza o seu <b>PIN OZ Pay</b>';
+key_pin_label['es'] = 'Introduce tu <b>PIN OZ Pay</b>';
 key_pin_label['fr'] = '';
 key_pin_label['de'] = '';
 key_pin_label['nl'] = '';

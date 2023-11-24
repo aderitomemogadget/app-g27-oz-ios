@@ -30,9 +30,9 @@
 .homepageContainer.container{margin:0;float:left;display:block;font-size:12px;font-weight:600;width:100%}
 .homepageContainer.container .limite-label{font-weight:700}
 .homepageContainer .homepageLoginInfo{padding:10px;font-size:14px;float:left;width:100%;padding-bottom:0px}
-.homepageContainer .homepageLoginInfo .info-page{height:70px;background:rgb(1,200,209);background:linear-gradient(90deg, rgba(1,200,209,1) 0%, rgba(1,239,172,1) 100%);width:100%;padding:10px 10px;border-radius:15px}
+.homepageContainer .homepageLoginInfo .info-page{height:70px;background:rgb(32,106,176);background:linear-gradient(90deg, rgba(32,106,176,1) 0%, rgba(80,185,75,1) 100%);width:100%;padding:10px 10px;border-radius:15px}
 
-.homepageContainer .homepageLoginInfo .info-page2{height:70px;background:rgb(1,200,209);background:linear-gradient(90deg, rgba(1,200,209,1) 0%, rgba(1,239,172,1) 100%);width:100%;padding:10px 10px;border-radius:15px}
+.homepageContainer .homepageLoginInfo .info-page2{height:70px;background:rgb(32,106,176);background:linear-gradient(90deg, rgba(32,106,176,1) 0%, rgba(80,185,75,1) 100%);width:100%;padding:10px 10px;border-radius:15px}
 .homepageContainer .homepageLoginInfo .info-page2:active{background-color:rgb(238, 255, 252) !important}
 
 .homepageContainer .homepageLoginInfo > div .role {color:red}

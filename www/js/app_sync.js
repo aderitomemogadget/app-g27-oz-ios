@@ -229,24 +229,8 @@ function mostra_animacao()
 	boxWrapper.appendChild(iDiv);
 
 
-	var iDiv2 = document.createElement('div');
-	var iDiv3 = document.createElement('div');
-	var iDiv4 = document.createElement('div');
-	var iDiv5 = document.createElement('div');
-	var iDiv6 = document.createElement('div');
-	var iDiv7 = document.createElement('div');
-
-	var iDiv8 = document.createElement('div');//pinta do i
-	var iDiv9 = document.createElement('div');//i
-
-	var iDiv10 = document.createElement('div');//Q
-	var iDiv11 = document.createElement('div');//Q
-
-	var iDiv12 = document.createElement('div');//pinta do i
-	var iDiv13 = document.createElement('div');//i
-
-	var iDiv14 = document.createElement('div');//
-	var iDiv15 = document.createElement('div');//Bem vindo
+	var iDiv2 = document.createElement('div');//logotipo
+	var iDiv14 = document.createElement('div');//Bem vindo
 
 	function frame()
 	{
@@ -262,505 +246,45 @@ function mostra_animacao()
 		if(frame_pos==2)
 		{
 			iDiv.style.display = 'none';
-		}
-		if(frame_pos==3)
-		{
-			iDiv.style.display = 'block';
-		}
-		if(frame_pos==5)
-		{
-			iDiv.style.display = 'none';
-		}
-		if(frame_pos==6)
-		{
-			iDiv.style.display = 'block';
-		}
-		if(frame_pos==7)
-		{
-			iDiv2.style.backgroundColor = '#ffffff';
+			
+			//iDiv2.style.backgroundColor = '#ffffff';
 			iDiv2.style.display = 'block';
 			iDiv2.style.position = 'absolute';
-			iDiv2.style.left = (w-25) + "px";
-			iDiv2.style.top = ((h/2)-35) + "px";
-			iDiv2.style.width = "25px";
-			iDiv2.style.height = "25px";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv2);
+			iDiv2.style.left = (w/2)-150 + "px";
+			iDiv2.style.top = ((h/2)-190) + "px";
+			iDiv2.style.width = "300px";
+			iDiv2.style.height = "300px";
 			boxWrapper.appendChild(iDiv2);
 
-			iDiv3.style.backgroundColor = '#ffffff';
-			iDiv3.style.display = 'block';
-			iDiv3.style.position = 'absolute';
-			iDiv3.style.left = "0px";
-			iDiv3.style.top = ((h/2)+15) + "px";
-			iDiv3.style.width = "25px";
-			iDiv3.style.height = "25px";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv3);
-			boxWrapper.appendChild(iDiv3);
-		}
-		if(frame_pos==8)
-		{
-			var novo_w = (w * 10)/100;
-			iDiv2.style.width = novo_w + "px";
-			iDiv2.style.left = (w-novo_w) + "px";
+			var DOM_img = document.createElement("img");
+			DOM_img.style.width = "300px";
+			DOM_img.style.height = "300px";
 
-			iDiv3.style.width = novo_w + "px";
-		}
-		if(frame_pos==9)
-		{
-			var novo_w = (w * 20)/100;
-			iDiv2.style.width = novo_w + "px";
-			iDiv2.style.left = (w-novo_w) + "px";
-
-			iDiv3.style.width = novo_w + "px";
-		}
-		if(frame_pos==10)
-		{
-			var novo_w = (w * 30)/100;
-			iDiv2.style.width = novo_w + "px";
-			iDiv2.style.left = (w-novo_w) + "px";
-
-			iDiv3.style.width = novo_w + "px";
-		}
-		if(frame_pos==11)
-		{
-			var novo_w = (w * 40)/100;
-			iDiv2.style.width = novo_w + "px";
-			iDiv2.style.left = (w-novo_w) + "px";
-
-			iDiv3.style.width = novo_w + "px";
-		}
-		if(frame_pos==12)
-		{
-			var novo_w = (w * 50)/100;
-			iDiv2.style.width = novo_w + "px";
-			iDiv2.style.left = (w-novo_w) + "px";
-
-			iDiv3.style.width = novo_w + "px";
-		}
-		if(frame_pos==13)
-		{
-			var novo_w = ((w * 50)/100)+30;
-			iDiv2.style.width = novo_w + "px";
-			iDiv2.style.left = (w-novo_w) + "px";
-
-			iDiv3.style.width = novo_w + "px";
-		}
-		if(frame_pos==14)
-		{
-			//Começa a subir
-			var novo_w = ((w * 50)/100)+30;
-
-			iDiv4.style.backgroundColor = '#ffffff';
-			iDiv4.style.display = 'block';
-			iDiv4.style.position = 'absolute';
-			iDiv4.style.left = (w/2) - 40 + "px";
-			iDiv4.style.top = ((h/2)-35) + "px";
-			iDiv4.style.width = "25px";
-			iDiv4.style.height = "25px";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv4);
-			boxWrapper.appendChild(iDiv4);
-
-
-			iDiv5.style.backgroundColor = '#ffffff';
-			iDiv5.style.display = 'block';
-			iDiv5.style.position = 'absolute';
-			iDiv5.style.left = (w/2) + 10 + "px";
-			iDiv5.style.top = ((h/2)+15) + "px";
-			iDiv5.style.width = "25px";
-			iDiv5.style.height = "25px";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv5);
-			boxWrapper.appendChild(iDiv5);
-
-
-			//retira comprimento
-			var novo_w = ((w * 40)/100);
-			iDiv3.style.left = ((w/2)-novo_w+30) + "px";
-			iDiv3.style.width = novo_w + "px";
-
-
-		}
-		if(frame_pos==15)
-		{
-			var novo_h = ((h * 10)/100);
-			iDiv4.style.height = novo_h + "px";
-
-			iDiv5.style.top = ((h/2)+10+30-novo_h) + "px";
-			iDiv5.style.height = novo_h + "px";
-
-			//retira comprimento
-			var novo_w = ((w * 30)/100);
-			iDiv2.style.width = novo_w + "px";
-
-			iDiv3.style.left = ((w/2)-novo_w+30) + "px";
-			iDiv3.style.width = novo_w + "px";
+			DOM_img.src = "img/intro.png";
+			iDiv2.appendChild(DOM_img);
 
 		}
 		if(frame_pos==16)
 		{
-			var novo_h = ((h * 20)/100);
-			iDiv4.style.height = novo_h + "px";
-
-			iDiv5.style.top = ((h/2)+10+30-novo_h) + "px";
-			iDiv5.style.height = novo_h + "px";
-
-			//retira comprimento
-			var novo_w = ((w * 20)/100);
-			iDiv2.style.width = novo_w + "px";
-			
-			iDiv3.style.left = ((w/2)-novo_w+30) + "px";
-			iDiv3.style.width = novo_w + "px";
-		}
-		if(frame_pos==17)
-		{
-			var novo_h = ((h * 30)/100);
-			iDiv4.style.height = novo_h + "px";
-
-			iDiv5.style.top = ((h/2)+10+30-novo_h) + "px";
-			iDiv5.style.height = novo_h + "px";
-
-			//retira comprimento
-			var novo_w = ((w * 10)/100);
-			iDiv2.style.width = novo_w + "px";
-			
-			iDiv3.style.left = ((w/2)-novo_w+30) + "px";
-			iDiv3.style.width = novo_w + "px";
-		}
-		if(frame_pos==18)
-		{
-			var novo_h = ((h * 40)/100);
-			iDiv4.style.height = novo_h + "px";
-
-			iDiv5.style.top = ((h/2)+10+30-novo_h) + "px";
-			iDiv5.style.height = novo_h + "px";
-
-			//retira comprimento
-			var novo_w = ((w * 10)/100)-30;
-			iDiv2.style.width = novo_w + "px";
-			
-			iDiv3.style.left = ((w/2)-novo_w+30) + "px";
-			iDiv3.style.width = novo_w + "px";
-		}
-		if(frame_pos==19)
-		{
-			var novo_h = ((h * 50)/100);
-			iDiv4.style.height = novo_h + "px";
-
-			iDiv5.style.top = ((h/2)+10+30-novo_h) + "px";
-			iDiv5.style.height = novo_h + "px";
-
-			//retira comprimento
-			var novo_w = 25;
-			iDiv2.style.left = (w/2) - 40 + "px";
-			iDiv2.style.width = novo_w + "px";
-			
-			iDiv3.style.left = ((w/2) + 10 ) + "px";
-			iDiv3.style.width = "25px";
-		}
-		if(frame_pos==20)
-		{
-			var novo_h = ((h * 50)/100);
-			iDiv4.style.height = novo_h + "px";
-
-			iDiv5.style.top = ((h/2)+10+30-novo_h) + "px";
-			iDiv5.style.height = novo_h + "px";
-
-			//esconde
-			iDiv2.style.display = "none";
-			iDiv3.style.display = "none";
-		}
-		if(frame_pos==21)
-		{
-			var novo_h = ((h * 50)/100);
-			iDiv4.style.height = novo_h + "px";
-
-			iDiv5.style.top = ((h/2)+10+30-novo_h) + "px";
-			iDiv5.style.height = novo_h + "px";
-		}
-		if(frame_pos==22)
-		{
-			//Elemento fixo
-			iDiv6.style.backgroundColor = '#ffffff';
-			iDiv6.style.display = 'block';
-			iDiv6.style.position = 'absolute';
-			iDiv6.style.left = (w/2) -40 + "px";
-			iDiv6.style.top =  (h/2) -35 + "px";
-			iDiv6.style.width = "25px";
-			iDiv6.style.height = "75px";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv6);
-			boxWrapper.appendChild(iDiv6);
-
-
-			iDiv7.style.backgroundColor = '#ffffff';
-			iDiv7.style.display = 'block';
-			iDiv7.style.position = 'absolute';
-			iDiv7.style.left = (w/2) +10 + "px";
-			iDiv7.style.top =  (h/2) -35 + "px";
-			iDiv7.style.width = "25px";
-			iDiv7.style.height = "75px";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv7);
-			boxWrapper.appendChild(iDiv7);
-
-
-
-			//retira comprimento
-			var novo_h = ((h * 40)/100);
-			iDiv4.style.top = (h/2)+((h/2)-novo_h) -25 + "px";
-			iDiv4.style.height = novo_h + 25 + "px";
-
-			iDiv5.style.top =  "0px";
-			iDiv5.style.height = novo_h + 30 + "px";
-
-			//esconde
-			iDiv2.style.display = "none";
-			iDiv3.style.display = "none";
-		}
-		if(frame_pos==23)
-		{
-			//retira comprimento
-			var novo_h = ((h * 30)/100);
-			iDiv4.style.top = (h/2)+((h/2)-novo_h) + "px";
-			iDiv4.style.height = novo_h + 25 + "px";
-
-			iDiv5.style.height = novo_h + 30 + "px";
-		}
-		if(frame_pos==24)
-		{
-			//retira comprimento
-			var novo_h = ((h * 20)/100);
-			iDiv4.style.top = (h/2)+((h/2)-novo_h) + "px";
-			iDiv4.style.height = novo_h + "px";
-
-			iDiv5.style.height = novo_h + 30 + "px";
-		}
-		if(frame_pos==25)
-		{
-			//retira comprimento
-			var novo_h = ((h * 10)/100);
-			iDiv4.style.top = (h/2)+((h/2)-novo_h) + "px";
-			iDiv4.style.height = novo_h + "px";
-
-			iDiv5.style.height = novo_h + 30 + "px";
-		}
-		if(frame_pos==26)
-		{
-			//retira comprimento
-			var novo_h = ((h * 0)/100);
-			iDiv4.style.top = (h/2)+((h/2)-novo_h) + "px";
-			iDiv4.style.height = novo_h + "px";
-
-			iDiv5.style.height = novo_h  + "px";
-		}
-		//------------- fase 2
-		if(frame_pos==27)
-		{
-			var move=10;
-			//retira comprimento
-			iDiv6.style.left = (w/2) -40 -move + "px";
-			iDiv.style.left = (w/2) -10 -move + "px";
-			iDiv7.style.left = (w/2) +10 -move + "px";
-
-
-			iDiv8.style.backgroundColor = '#ffffff';
-			iDiv8.style.display = 'block';
-			iDiv8.style.position = 'absolute';
-			iDiv8.style.left = (w/2) +move + "px";
-			iDiv8.style.top = ((h/2)-40) + "px";
-			iDiv8.style.width = "25px";
-			iDiv8.style.height = "25px";
-			iDiv8.style.borderRadius = "50%";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv8);
-			boxWrapper.appendChild(iDiv8);
-
-
-			iDiv9.style.backgroundColor = '#ffffff';
-			iDiv9.style.display = 'block';
-			iDiv9.style.position = 'absolute';
-			iDiv9.style.left = (w/2) +move + "px";
-			iDiv9.style.top = ((h/2)-5) + "px";
-			iDiv9.style.width = "25px";
-			iDiv9.style.height = "45px";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv9);
-			boxWrapper.appendChild(iDiv9);
-
-
-
-		}
-		if(frame_pos==28)
-		{
-			var move=20;
-			iDiv6.style.left = (w/2) -40 -move + "px";
-			iDiv.style.left = (w/2) -10 -move + "px";
-			iDiv7.style.left = (w/2) +10 -move + "px";
-			
-			iDiv8.style.left = (w/2) +move + "px";
-			iDiv9.style.left = (w/2) +move + "px";
-		}
-		if(frame_pos==29)
-		{
-			var move=30;
-			iDiv6.style.left = (w/2) -40 -move + "px";
-			iDiv.style.left = (w/2) -10 -move + "px";
-			iDiv7.style.left = (w/2) +10 -move + "px";
-			
-			iDiv8.style.left = (w/2) +move + "px";
-			iDiv9.style.left = (w/2) +move + "px";
-
-
-			iDiv10.style.backgroundColor = 'transparent';
-			iDiv10.style.display = 'block';
-			iDiv10.style.position = 'absolute';
-			iDiv10.style.left = (w/2) -90 +move + "px";
-			iDiv10.style.top = ((h/2)-40) + "px";
-			iDiv10.style.width = "80px";
-			iDiv10.style.height = "80px";
-			iDiv10.style.borderColor = "#ffffff";
-			iDiv10.style.border = "solid 25px #ffffff";
-			iDiv10.style.borderRadius = "50%";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv10);
-			boxWrapper.appendChild(iDiv10);
-
-
-
-			iDiv11.style.backgroundColor = '#ffffff';
-			iDiv11.style.display = 'block';
-			iDiv11.style.position = 'absolute';
-			iDiv11.style.left = (w/2)-40 +move + "px";
-			iDiv11.style.top = ((h/2)-5) + "px";
-			iDiv11.style.width = "15px";
-			iDiv11.style.height = "50px";
-			iDiv11.style.rotate = "-45deg";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv11);
-			boxWrapper.appendChild(iDiv11);
-
-
-		}
-		if(frame_pos==30)
-		{
-			var move=40;
-			iDiv6.style.left = (w/2) -40 -move + "px";
-			iDiv.style.left = (w/2) -10 -move + "px";
-			iDiv7.style.left = (w/2) +10 -move + "px";
-			
-			iDiv8.style.left = (w/2) +move + "px";
-			iDiv9.style.left = (w/2) +move + "px";
-			iDiv10.style.left = (w/2) -90 +move + "px";
-			iDiv11.style.left = (w/2) -40 +move + "px";
-		}
-		if(frame_pos==31)
-		{
-			var move=50;
-			iDiv6.style.left = (w/2) -40 -move + "px";
-			iDiv.style.left = (w/2) -10 -move + "px";
-			iDiv7.style.left = (w/2) +10 -move + "px";
-			
-			iDiv8.style.left = (w/2) +move + "px";
-			iDiv9.style.left = (w/2) +move + "px";
-			iDiv10.style.left = (w/2) -90 +move + "px";
-			iDiv11.style.left = (w/2) -40 +move + "px";
-		}
-		if(frame_pos==32)
-		{
-			var move=60;
-			iDiv6.style.left = (w/2) -40 -move + "px";
-			iDiv.style.left = (w/2) -10 -move + "px";
-			iDiv7.style.left = (w/2) +10 -move + "px";
-			
-			iDiv8.style.left = (w/2) +move + "px";
-			iDiv9.style.left = (w/2) +move + "px";
-			iDiv10.style.left = (w/2) -90 +move + "px";
-			iDiv11.style.left = (w/2) -40 +move + "px";
-		}
-		if(frame_pos==33)
-		{
-			var move=70;
-			iDiv6.style.left = (w/2) -40 -move + "px";
-			iDiv.style.left = (w/2) -10 -move + "px";
-			iDiv7.style.left = (w/2) +10 -move + "px";
-			
-			iDiv8.style.left = (w/2) +move + "px";
-			iDiv9.style.left = (w/2) +move + "px";
-			iDiv10.style.left = (w/2) -90 +move + "px";
-			iDiv11.style.left = (w/2) -40 +move + "px";
-
-
-			iDiv12.style.backgroundColor = '#ffffff';
-			iDiv12.style.display = 'block';
-			iDiv12.style.position = 'absolute';
-			iDiv12.style.left = (w/2) -125 +move + "px";
-			iDiv12.style.top = ((h/2)-40) + "px";
-			iDiv12.style.width = "25px";
-			iDiv12.style.height = "25px";
-			iDiv12.style.borderRadius = "50%";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv12);
-			boxWrapper.appendChild(iDiv12);
-
-
-			iDiv13.style.backgroundColor = '#ffffff';
-			iDiv13.style.display = 'block';
-			iDiv13.style.position = 'absolute';
-			iDiv13.style.left = (w/2) -125 +move + "px";
-			iDiv13.style.top = ((h/2)-5) + "px";
-			iDiv13.style.width = "25px";
-			iDiv13.style.height = "45px";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv13);
-			boxWrapper.appendChild(iDiv13);
-
-
-		}
-		if(frame_pos==34)
-		{
-			var move=80;
-			iDiv6.style.left = (w/2) -40 -move + "px";
-			iDiv.style.left = (w/2) -10 -move + "px";
-			iDiv7.style.left = (w/2) +10 -move + "px";
-			
-			iDiv8.style.left = (w/2) +move + "px";
-			iDiv9.style.left = (w/2) +move + "px";
-			iDiv10.style.left = (w/2) -90 +move + "px";
-			iDiv11.style.left = (w/2) -40 +move + "px";
-			
-			iDiv12.style.left = (w/2) -125 +move + "px";
-			iDiv13.style.left = (w/2) -125 +move + "px";
-
-		}
-		if(frame_pos==35)
-		{
-			var move=85;
-			iDiv6.style.left = (w/2) -40 -move + "px";
-			iDiv.style.left = (w/2) -10 -move + "px";
-			iDiv7.style.left = (w/2) +10 -move + "px";
-			
-			iDiv8.style.left = (w/2) +move + "px";
-			iDiv9.style.left = (w/2) +move + "px";
-			iDiv10.style.left = (w/2) -90 +move + "px";
-			iDiv11.style.left = (w/2) -40 +move + "px";
-			
-			iDiv12.style.left = (w/2) -125 +move + "px";
-			iDiv13.style.left = (w/2) -125 +move + "px";
-
-		}
-		if(frame_pos==36)
-		{
 			iDiv14.style.backgroundColor = '#ffffff';
 			iDiv14.style.display = 'block';
 			iDiv14.style.position = 'absolute';
-			iDiv14.style.left = (w/2) -125 + "px";
+			iDiv14.style.left = (w/2)-65 + "px";
 			iDiv14.style.top = ((h/2)+60) + "px";
 			iDiv14.style.width = "3px";
 			iDiv14.style.height = "25px";
-			//document.getElementsByTagName('body')[0].appendChild(iDiv14);
 			boxWrapper.appendChild(iDiv14);
 
 		}
-		if(frame_pos==37)
+		if(frame_pos==17)
 		{
 			iDiv14.style.display = 'none';
 		}
-		if(frame_pos==38)
+		if(frame_pos==18)
 		{
 			iDiv14.style.display = 'block';
 		}
-		if(frame_pos==39)
+		if(frame_pos==19)
 		{
 			iDiv14.innerHTML = "B";
 			iDiv14.style.width = "auto";
@@ -772,43 +296,43 @@ function mostra_animacao()
 			iDiv14.style.borderRight = "solid #ffffff";
 			iDiv14.style.color = "#ffffff";
 		}
-		if(frame_pos==40)
+		if(frame_pos==20)
 		{
 			iDiv14.innerHTML = "Be";
 		}
-		if(frame_pos==41)
+		if(frame_pos==21)
 		{
 			iDiv14.innerHTML = "Bem";
 		}
-		if(frame_pos==42)
+		if(frame_pos==22)
 		{
 			iDiv14.innerHTML = "Bem-";
 		}
-		if(frame_pos==43)
+		if(frame_pos==23)
 		{
 			iDiv14.innerHTML = "Bem-V";
 		}
-		if(frame_pos==44)
+		if(frame_pos==24)
 		{
 			iDiv14.innerHTML = "Bem-Vi";
 		}
-		if(frame_pos==45)
+		if(frame_pos==25)
 		{
 			iDiv14.innerHTML = "Bem-Vi";
 		}
-		if(frame_pos==46)
+		if(frame_pos==26)
 		{
 			iDiv14.innerHTML = "Bem-Vin";
 		}
-		if(frame_pos==47)
+		if(frame_pos==27)
 		{
 			iDiv14.innerHTML = "Bem-Vin";
 		}
-		if(frame_pos==48)
+		if(frame_pos==28)
 		{
 			iDiv14.innerHTML = "Bem-Vind";
 		}
-		if(frame_pos==49)
+		if(frame_pos==29)
 		{
 			iDiv14.innerHTML = "Bem-Vindo";
 		}
