@@ -152,13 +152,13 @@ function registo1_step1()
 			else
 			{
 				//erro
-				$('#registo-1').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo.png" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> ERRO <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
+				$('#registo-1').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo2.svg" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> ERRO <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
 			}
 		},
 		error:function()
 		{
 			//erro
-			$('#registo-1').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo.png" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> ERRO <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
+			$('#registo-1').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo2.svg" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> ERRO <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
 		}
 	});
 }
@@ -181,13 +181,13 @@ function registo2_step1()
 			else
 			{
 				//erro
-				$('#registo-2').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo.png" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> ERRO <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
+				$('#registo-2').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo2.svg" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> ERRO <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
 			}
 		},
 		error:function()
 		{
 			//erro
-			$('#registo-2').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo.png" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> ERRO <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
+			$('#registo-2').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo2.svg" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> ERRO <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
 		}
 	});
 }
@@ -277,13 +277,13 @@ function registo1_step2()
 			else
 			{
 				//erro				
-				$('#registo-1').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo.png" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> '+erro+' <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
+				$('#registo-1').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo2.svg" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> '+erro+' <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
 			}
 		},
 		error:function()
 		{
 			var erro='Pedimos desculpas, mas derivado a problemas técnicos não nos foi possivel realizar esta operação';
-			$('#registo-1').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo.png" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> '+erro+' <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
+			$('#registo-1').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo2.svg" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> '+erro+' <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
 		}
 	});
 }
@@ -385,13 +385,13 @@ function registo2_step2()
 			}
 			else
 			{
-				$('#registo-2').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo.png" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> '+erro+' <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
+				$('#registo-2').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo2.svg" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> '+erro+' <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
 			}
 		},
 		error:function()
 		{
 			var erro='Pedimos desculpas, mas derivado a problemas técnicos não nos foi possivel realizar esta operação';			
-			$('#registo-2').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo.png" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> '+erro+' <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
+			$('#registo-2').html('<div style="display:block;background-color:#fff"><div class="header"><div style="padding:10px;width:50%;float:left"><img src="img/logo2.svg" border="0" style="width:80px;float:left"></div><div style="padding-right:10px;width:50%;float:left;text-align:right"><img src="img/hello.png" border="0" style="width:80px"></div></div></div><div style="height:20px;background:#fff;">&nbsp;</div><div class="mensagens-container" style="margin-top:-20px;background:#fff;padding-top:20px"><div id="lista-scroll" class="lista-scroll" style="overflow:hidden;overflow-y:scroll"> '+erro+' <div class="clear"></div><div style="display:block;width:100%;text-align:center;margin-top:20px"><div class="button_reserva cancelar-btn-trad" onclick="goto_to_start()">Voltar</div></div></div></div></div>');
 		}
 	});
 }
@@ -849,7 +849,7 @@ function infoLogin()
 					if(limite_perc <= 20){background = '#f3d337';}
 					else if(limite_perc<=10){background = '#ff5e00';}
 
-					html = '<div class="app-header"><div class="header"><div class="left"><img src="img/logo.png" alt="" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="close" src="img/close2.svg"></a></div></div></div>';
+					html = '<div class="app-header"><div class="header"><div class="left"><img src="img/logo2.svg" alt="" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="close" src="img/close2.svg"></a></div></div></div>';
 					html += '<div class="homepageContainer container">';
 						html += '<div id="menu_info" class="homepageLoginInfo">';							
 							html += '<div class="info-page">';
@@ -2726,7 +2726,7 @@ function showHomepagePOS()/*POS*/
 {
 	var posto_info='POSTO OZ Pay';
 	var posto_name=window.localStorage.getItem("postoPOS");
-	header = '<div class="app-header"><div class="header"><div class="left"><img src="img/logo.png" alt="" border="0" class="logo"></div><div class="cent"></div></div></div>';
+	header = '<div class="app-header"><div class="header"><div class="left"><img src="img/logo2.svg" alt="" border="0" class="logo"></div><div class="cent"></div></div></div>';
 	$("#header").html(header);
 
 	html = '<div class="homepageContainer container">';
@@ -2920,7 +2920,7 @@ function showHomepageCallCenter()
 {
 	var posto_info='CALLCENTER OZ Pay';
 	var posto_name=window.localStorage.getItem("telemovel");
-	header = '<div class="app-header"><div class="header"><div class="left"><img src="img/logo.png" alt="" border="0" class="logo"></div><div class="cent"></div></div></div>';
+	header = '<div class="app-header"><div class="header"><div class="left"><img src="img/logo2.svg" alt="" border="0" class="logo"></div><div class="cent"></div></div></div>';
 	$("#header").html(header);
 
 	html = '<div class="homepageContainer container">';

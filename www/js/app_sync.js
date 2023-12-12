@@ -231,6 +231,7 @@ function mostra_animacao()
 
 	var iDiv2 = document.createElement('div');//logotipo
 	var iDiv14 = document.createElement('div');//Bem vindo
+	var iDiv3 = document.createElement('div');//Intro
 
 	function frame()
 	{
@@ -251,7 +252,8 @@ function mostra_animacao()
 			iDiv2.style.display = 'block';
 			iDiv2.style.position = 'absolute';
 			iDiv2.style.left = (w/2)-150 + "px";
-			iDiv2.style.top = ((h/2)-190) + "px";
+			//iDiv2.style.top = ((h/2)-190) + "px";
+			iDiv2.style.top = "100px";
 			iDiv2.style.width = "300px";
 			iDiv2.style.height = "300px";
 			boxWrapper.appendChild(iDiv2);
@@ -260,8 +262,27 @@ function mostra_animacao()
 			DOM_img.style.width = "300px";
 			DOM_img.style.height = "300px";
 
-			DOM_img.src = "img/intro.png";
+			//DOM_img.src = "img/intro.png";
+			DOM_img.src = "img/logo.svg";
+			
 			iDiv2.appendChild(DOM_img);
+
+
+
+			iDiv3.style.display = 'block';
+			iDiv3.style.position = 'absolute';
+			iDiv3.style.left = "0px";
+			iDiv3.style.top = "350px";
+			iDiv3.style.width = "100%";
+			boxWrapper.appendChild(iDiv3);
+
+			var DOM_img = document.createElement("img");
+			DOM_img.style.width = "100%";
+			DOM_img.src = "img/intro.png";
+			
+			iDiv3.appendChild(DOM_img);
+
+
 
 		}
 		if(frame_pos==16)
@@ -270,7 +291,8 @@ function mostra_animacao()
 			iDiv14.style.display = 'block';
 			iDiv14.style.position = 'absolute';
 			iDiv14.style.left = (w/2)-65 + "px";
-			iDiv14.style.top = ((h/2)+60) + "px";
+			//iDiv14.style.top = ((h/2)+60) + "px";
+			iDiv14.style.top = "360px";
 			iDiv14.style.width = "3px";
 			iDiv14.style.height = "25px";
 			boxWrapper.appendChild(iDiv14);
