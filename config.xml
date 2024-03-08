@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="pt.ozprod.app" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>OZ</name>
-    <description>OZ</description>
+<widget id="pt.ozprod.app" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>FULL YOUR ENERGY </name>
+    <description>FULL YOUR ENERGY </description>
     <author email="comercial@memogadget.com" href="http://www.memogadget.com/">Memogadget</author>
     <gap:platform name="ios" />
     <preference name="UseSwiftLanguageVersion" value="5.8.1" />
