@@ -45,7 +45,7 @@
 
 
 .Station-Item .posto-actions .ver-posto span{margin-left:15px}
-.Station-Item .posto-actions .ver-posto{background: rgb(86,178,172);background: linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%);text-indent:5px}
+.Station-Item .posto-actions .ver-posto{background: rgb(111,178,224);text-indent:5px}
 .Station-Item .posto-actions .ver-posto img{left:10px;width:14px}
 
 .Station-Item2{width:100%;display:block;padding:10px 0;margin-bottom:25px;border:solid 1px #b2e7ec;position:relative;background:#fff;border-radius:25px}
@@ -73,7 +73,7 @@
 .Station-Item2 .posto-actions .ver-mapa a{color:#42c4ce !important; }
 .Station-Item2 .posto-actions .ver-mapa img{left:8px;width:12px}
 .Station-Item2 .posto-actions .ver-posto span{margin-left:15px}
-.Station-Item2 .posto-actions .ver-posto{background: rgb(86,178,172);background: linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%);text-indent:5px}
+.Station-Item2 .posto-actions .ver-posto{background: rgb(111,178,224);text-indent:5px}
 .Station-Item2 .posto-actions .ver-posto img{left:10px;width:14px}
 
 
@@ -146,9 +146,9 @@
 .PaymentMethods .PaymentMethod{border:none}
 .PaymentMethods .PaymentMethod .Method{font-weight:700}
 .button_reserva{display:inline-block;padding:10px 30px;margin:0 2px;border-radius:25px}
-.button_reserva.validar-btn-trad{background:rgb(86,178,172);color:#fff;background: linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%)}
+.button_reserva.validar-btn-trad{background:rgb(111,178,224);color:#fff;}
 .button_reserva.cancelar-btn-trad{background:#fff;color:#000;border:solid 1px #a3a3a3}
-.button_reserva.voltarReserva {color:#fff;background: rgb(86,178,172);background: linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%)}
+.button_reserva.voltarReserva {color:#fff;background: rgb(111,178,224);}
 .button_reserva.cancelarReserva{background:#fff;color:#000;border:solid 1px #a3a3a3}
 .previewReserva{display:table;font-size:16px;font-weight:600;padding:5px 20px;width:100%}
 .previewReserva2{display:table;font-size:16px;font-weight:600;padding:5px 5px;width:100%}

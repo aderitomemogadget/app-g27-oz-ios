@@ -30,9 +30,9 @@
 .homepageContainer.container{margin:0;float:left;display:block;font-size:12px;font-weight:600;width:100%}
 .homepageContainer.container .limite-label{font-weight:700}
 .homepageContainer .homepageLoginInfo{padding:10px;font-size:14px;float:left;width:100%;padding-bottom:0px}
-.homepageContainer .homepageLoginInfo .info-page{height:70px;background:rgb(86,178,172);background:linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%);width:100%;padding:10px 10px;border-radius:15px}
+.homepageContainer .homepageLoginInfo .info-page{height:70px;background:rgb(111,178,224);width:100%;padding:10px 10px;border-radius:15px}
 
-.homepageContainer .homepageLoginInfo .info-page2{height:70px;background:rgb(86,178,172);background:linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%);width:100%;padding:10px 10px;border-radius:15px}
+.homepageContainer .homepageLoginInfo .info-page2{height:70px;background:rgb(111,178,224);width:100%;padding:10px 10px;border-radius:15px}
 .homepageContainer .homepageLoginInfo .info-page2:active{background-color:rgb(238, 255, 252) !important}
 
 .homepageContainer .homepageLoginInfo > div .role {color:red}
@@ -59,7 +59,7 @@
 .homepageContainer .homepageLoginSaldo .saldo span{font-weight:700}
 .homepageContainer .homepageLoginSaldo .saldo-litros{background:#c7342a;margin:10px auto;padding:10px 5px;width:80px;color:#fff;text-align:center}
 .homepageContainer .homepageLoginDetalhes .mapa-exemplo img {width:100%}
-.efeito1{height: 20px;width: 100%;margin: 0px;position: absolute;text-align: center;background: rgb(225,225,225);background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(86,178,172,0) 100%);font-size: 16px;font-family: 'inter_regular',sans-serif;color: #000;line-height: 60px;z-index:2}
+.efeito1{height: 20px;width: 100%;margin: 0px;position: absolute;text-align: center;background: rgb(225,225,225);background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(1,200,209,0) 100%);font-size: 16px;font-family: 'inter_regular',sans-serif;color: #000;line-height: 60px;z-index:2}
 .homepageContainer .homepageConsumos {display:block;float:left;width:100%;padding:10px 0}
 .homepageContainer .homepageConsumos .homepageConsumosHeaders > div {width:24.3%;padding:2px;text-align:center;margin:0 auto;background:#c7342a;color:#fff;margin:0 16px;display:inline-block;position:relative}
 .homepageContainer .homepageConsumos .homepageConsumosHeaders > div.limite {}

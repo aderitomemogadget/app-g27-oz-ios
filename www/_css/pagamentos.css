@@ -30,7 +30,7 @@
 .container-pin .inputs-numero {position:relative;display:block;float:left;width:100%;padding:10px;text-align:center}
 .container-pin .inputs-numero .form-linha-numeros {position:relative;display:inline-block}
 
-.container-pin .inputs-numero .form-linha-numeros .fbutton {position:relative;display:inline-block;background:#ebebeb;width:60px;box-shadow:none;border:0;margin:5px;height:45px;border-radius:5px;float:left;font:300 30px/30px inter_regular;background: rgb(86,178,172);background: linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%);}
+.container-pin .inputs-numero .form-linha-numeros .fbutton {position:relative;display:inline-block;background:#ebebeb;width:60px;box-shadow:none;border:0;margin:5px;height:45px;border-radius:5px;float:left;font:300 30px/30px inter_regular;background: rgb(1,200,209);background: linear-gradient(90deg, rgba(1,200,209,1) 0%, rgba(1,239,172,1) 100%);}
 
 .container-pin .inputs-numero .form-linha-numeros .gbutton {background:#dedede}
 .container-pin .inputs-numero .form-linha-numeros .gbutton.hide-pin {background-image:url(../img/show_p.svg);background-size:20%;background-repeat:no-repeat;background-position:center center}

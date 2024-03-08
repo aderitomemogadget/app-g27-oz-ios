@@ -56,8 +56,7 @@
 input, textarea{-webkit-user-select:auto !important;-khtml-user-select:auto !important;-moz-user-select:auto !important;-ms-user-select:auto !important;user-select:auto !important}
 html, body{padding:0px;margin:0px;height:100%;background:#FFF;overflow:hidden}
 body{
-    background: rgb(170,206,104);
-    background: linear-gradient(0deg, rgba(170,206,104,1) 0%, rgba(86,178,172,1) 50%);
+    background: rgb(111,178,224);
 }
 input[type='text'], input[type='number'], input[type='password'], textarea{font-size:12px}
 .clear{clear:both;content:"";line-height:0}
@@ -70,7 +69,7 @@ body, input, select, textarea, button, .ui-button {
 input{height:33px;padding:10px}
 
 
-#overlay, #overlay-login{background: rgb(170,206,104);background: linear-gradient(0deg, rgba(170,206,104,1) 0%, rgba(86,178,172,1) 50%);}
+#overlay, #overlay-login{background: rgb(111,178,224);}
 
 
 #overlay-login{transition:1s 0.4s;display:none;height:100%}
@@ -367,7 +366,7 @@ input{height:33px;padding:10px}
 .app-content .technical-sheet .menu-p li + li{border-top:#a89e97 1px solid}
 
 .app-footer{width:100%;position:fixed;bottom:0px;z-index:1001;height:60px;max-width:1352px}
-.app-footer .footer{height:170px;width:100%;margin:0px;bottom:0;position:fixed;text-align:center;background:rgb(225,225,225);background:linear-gradient(0deg, rgba(86,178,172,1) 50%, rgba(170,206,104,0) 100%);font-size:16px;font-family:'inter_regular',sans-serif;color:#000;line-height:60px}
+.app-footer .footer{height:170px;width:100%;margin:0px;bottom:0;position:fixed;text-align:center;background:rgb(225,225,225);background: linear-gradient(0deg, rgba(111,178,224,1) 50%, rgba(1,200,209,0) 100%);font-size:16px;font-family:'inter_regular',sans-serif;color:#000;line-height:60px}
 .app-footer .footer .menu-button{width:20%;float:left;text-align:center;display:inline-block;line-height:60px}
 .app-footer .footer .menu-button img{width:100%;max-width:45px;max-height:45px;vertical-align:middle}
 .app-footer .footer .menu-button img#pay{max-width:55px;max-height:55px}
@@ -632,19 +631,19 @@ dd{font-size:1.25em;margin:1em 0 0;padding-bottom:1em;border-bottom:1px solid #e
 .ver-posto:active{background-color:#332d2f !important}
 .ver-mapa:active{background-color:#332d2f !important}
 
-.button_aderir{color:#fff;display:inline-block;padding:10px 30px;margin:0 2px;border-radius:25px;margin-bottom:10px;background: rgb(86,178,172);background: linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%);}
+.button_aderir{color:#fff;display:inline-block;padding:10px 30px;margin:0 2px;border-radius:25px;margin-bottom:10px;background: rgb(111,178,224);}
 .button_aderir:active{background-color:#ccc !important}
 
 .button_selected{display:inline-block;padding:10px 15px 10px 15px;margin:0 1px;border-radius:25px;margin-bottom:10px;background:#333399;border:solid 1px #333399;float:left;font-size:16px;font-weight:400;color:#ffffff;text-align:center}
 .button_seleccionar{display:inline-block;padding:10px 15px 10px 15px;margin:0 1px;border-radius:25px;margin-bottom:10px;background:#ffffff;border:solid 1px #3ec2cf;float:left;font-size:16px;font-weight:400;color:#3ec2cf;text-align:center}
 
-#bt-login{color:#fff;display:inline-block;padding:7px 40px;margin:0 2px;border-radius:25px;margin-bottom:10px;background: rgb(86,178,172);background: linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%);height: 37px;border: 0;}
-#bt-login2{color:#fff;display:inline-block;padding:7px 40px;margin:0 2px;border-radius:25px;margin-bottom:10px;background: rgb(86,178,172);background: linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%);height: 37px;border: 0;}
+#bt-login{color:#fff;display:inline-block;padding:7px 40px;margin:0 2px;border-radius:25px;margin-bottom:10px;background: rgb(111,178,224);height: 37px;border: 0;}
+#bt-login2{color:#fff;display:inline-block;padding:7px 40px;margin:0 2px;border-radius:25px;margin-bottom:10px;background: rgb(111,178,224);height: 37px;border: 0;}
 #bt-login:active{background-color:#ccc !important}
 
 #bt-touchId{width:50px;height:50px}
 
-#bt-recuperar{color:#fff;display:inline-block;padding:7px 40px;margin:0 2px;border-radius:25px;margin-bottom:10px;background: rgb(86,178,172);background: linear-gradient(90deg, rgba(86,178,172,1) 0%, rgba(170,206,104,1) 190%);height: 37px;border: 0;}
+#bt-recuperar{color:#fff;display:inline-block;padding:7px 40px;margin:0 2px;border-radius:25px;margin-bottom:10px;background: rgb(111,178,224);height: 37px;border: 0;}
 #bt-recuperar:active{background-color:#ccc !important}
 
 .button_reserva:active{background-color:#ccc !important}
