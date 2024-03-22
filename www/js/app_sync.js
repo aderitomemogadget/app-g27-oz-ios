@@ -229,9 +229,48 @@ function mostra_animacao()
 	boxWrapper.appendChild(iDiv);
 
 
+
+	
+
+
+
+
 	var iDiv2 = document.createElement('div');//logotipo
-	var iDiv14 = document.createElement('div');//Bem vindo
 	var iDiv3 = document.createElement('div');//Intro
+	var iDiv4 = document.createElement('div');
+	var iDiv5 = document.createElement('div');
+	var iDiv6 = document.createElement('div');
+	var iDiv7 = document.createElement('div');
+	var iDiv8 = document.createElement('div');
+	var iDiv9 = document.createElement('div');
+	var iDiv10 = document.createElement('div');
+	var iDiv11 = document.createElement('div');
+	var iDiv12 = document.createElement('div');
+	var iDiv13 = document.createElement('div');
+	var iDiv14 = document.createElement('div');
+	var iDiv15 = document.createElement('div');
+	var iDiv16 = document.createElement('div');
+	var iDiv17 = document.createElement('div');
+	var iDiv18 = document.createElement('div');
+	var iDiv19 = document.createElement('div');
+	var iDiv20 = document.createElement('div');
+	var iDiv21 = document.createElement('div');
+	var iDiv22 = document.createElement('div');
+	var iDiv23 = document.createElement('div');
+	var iDiv24 = document.createElement('div');
+	var iDiv25 = document.createElement('div');
+
+
+	iDiv3.style.display = 'block';
+	iDiv3.style.position = 'absolute';
+	iDiv3.style.backgroundColor = '#ffffff';
+	iDiv3.style.left = "0px";
+	iDiv3.style.top = "0px";
+	iDiv3.style.width = "100%";
+	iDiv3.style.height = "100%";
+	boxWrapper.appendChild(iDiv3);
+
+
 
 	function frame()
 	{
@@ -244,6 +283,8 @@ function mostra_animacao()
 			loadAppNow();
 		}
 
+
+
 		if(frame_pos==2)
 		{
 			iDiv.style.display = 'none';
@@ -253,22 +294,26 @@ function mostra_animacao()
 			iDiv2.style.position = 'absolute';
 			iDiv2.style.left = (w/2)-150 + "px";
 			//iDiv2.style.top = ((h/2)-190) + "px";
-			iDiv2.style.top = "100px";
+			iDiv2.style.top = (h/2)-150 + "px";
 			iDiv2.style.width = "300px";
 			iDiv2.style.height = "300px";
 			boxWrapper.appendChild(iDiv2);
 
 			var DOM_img = document.createElement("img");
-			DOM_img.style.width = "300px";
-			DOM_img.style.height = "300px";
+			DOM_img.style.width = "100%";
+			DOM_img.style.maxwidth = "300px";
+			//DOM_img.style.height = "300px";
 
 			//DOM_img.src = "img/intro.png";
-			DOM_img.src = "img/logo.svg";
+			DOM_img.src = "img/anim/frame_1.jpg";
 			
 			iDiv2.appendChild(DOM_img);
 
 
 
+
+
+			/*
 			iDiv3.style.display = 'block';
 			iDiv3.style.position = 'absolute';
 			iDiv3.style.left = "0px";
@@ -281,83 +326,48 @@ function mostra_animacao()
 			DOM_img.src = "img/intro.png";
 			
 			iDiv3.appendChild(DOM_img);
-
-
-
-		}
-		if(frame_pos==16)
-		{
-			iDiv14.style.backgroundColor = '#ffffff';
-			iDiv14.style.display = 'block';
-			iDiv14.style.position = 'absolute';
-			iDiv14.style.left = (w/2)-65 + "px";
-			//iDiv14.style.top = ((h/2)+60) + "px";
-			iDiv14.style.top = "360px";
-			iDiv14.style.width = "3px";
-			iDiv14.style.height = "25px";
-			boxWrapper.appendChild(iDiv14);
+			*/
 
 		}
-		if(frame_pos==17)
-		{
-			iDiv14.style.display = 'none';
-		}
-		if(frame_pos==18)
-		{
-			iDiv14.style.display = 'block';
-		}
-		if(frame_pos==19)
-		{
-			iDiv14.innerHTML = "B";
-			iDiv14.style.width = "auto";
-			iDiv14.style.height = "22px";
-			iDiv14.style.lineHeight = "22px";
-			iDiv14.style.fontWeight = "600";
-			iDiv14.style.fontSize = "25px";
-			iDiv14.style.backgroundColor = "transparent";
-			iDiv14.style.borderRight = "solid #ffffff";
-			iDiv14.style.color = "#ffffff";
-		}
-		if(frame_pos==20)
-		{
-			iDiv14.innerHTML = "Be";
-		}
-		if(frame_pos==21)
-		{
-			iDiv14.innerHTML = "Bem";
-		}
-		if(frame_pos==22)
-		{
-			iDiv14.innerHTML = "Bem-";
-		}
-		if(frame_pos==23)
-		{
-			iDiv14.innerHTML = "Bem-V";
-		}
-		if(frame_pos==24)
-		{
-			iDiv14.innerHTML = "Bem-Vi";
-		}
-		if(frame_pos==25)
-		{
-			iDiv14.innerHTML = "Bem-Vi";
-		}
-		if(frame_pos==26)
-		{
-			iDiv14.innerHTML = "Bem-Vin";
-		}
-		if(frame_pos==27)
-		{
-			iDiv14.innerHTML = "Bem-Vin";
-		}
-		if(frame_pos==28)
-		{
-			iDiv14.innerHTML = "Bem-Vind";
-		}
-		if(frame_pos==29)
-		{
-			iDiv14.innerHTML = "Bem-Vindo";
-		}
+
+		var DOM_img = document.createElement("img");
+		DOM_img.style.width = "100%";
+		DOM_img.style.maxwidth = "300px";
+		//DOM_img.style.height = "300px";
+
+		if(frame_pos==4)  {iDiv4.style.display = 'block';iDiv4.style.position = 'absolute';iDiv4.style.left = (w/2)-150 + "px";iDiv4.style.top = (h/2)-150 + "px";iDiv4.style.width = "300px";iDiv4.style.height = "300px";boxWrapper.appendChild(iDiv4);DOM_img.src = "img/anim/frame_2.jpg"; iDiv4.appendChild(DOM_img);}
+		if(frame_pos==5)  {iDiv5.style.display = 'block';iDiv5.style.position = 'absolute';iDiv5.style.left = (w/2)-150 + "px";iDiv5.style.top = (h/2)-150 + "px";iDiv5.style.width = "300px";iDiv5.style.height = "300px";boxWrapper.appendChild(iDiv5);DOM_img.src = "img/anim/frame_3.jpg"; iDiv5.appendChild(DOM_img);}
+		if(frame_pos==6)  {iDiv6.style.display = 'block';iDiv6.style.position = 'absolute';iDiv6.style.left = (w/2)-150 + "px";iDiv6.style.top = (h/2)-150 + "px";iDiv6.style.width = "300px";iDiv6.style.height = "300px";boxWrapper.appendChild(iDiv6);DOM_img.src = "img/anim/frame_4.jpg"; iDiv6.appendChild(DOM_img);}
+		if(frame_pos==7)  {iDiv7.style.display = 'block';iDiv7.style.position = 'absolute';iDiv7.style.left = (w/2)-150 + "px";iDiv7.style.top = (h/2)-150 + "px";iDiv7.style.width = "300px";iDiv7.style.height = "300px";boxWrapper.appendChild(iDiv7);DOM_img.src = "img/anim/frame_5.jpg"; iDiv7.appendChild(DOM_img);}
+		if(frame_pos==8)  {iDiv8.style.display = 'block';iDiv8.style.position = 'absolute';iDiv8.style.left = (w/2)-150 + "px";iDiv8.style.top = (h/2)-150 + "px";iDiv8.style.width = "300px";iDiv8.style.height = "300px";boxWrapper.appendChild(iDiv8);DOM_img.src = "img/anim/frame_6.jpg"; iDiv8.appendChild(DOM_img);}
+		if(frame_pos==9)  {iDiv9.style.display = 'block';iDiv9.style.position = 'absolute';iDiv9.style.left = (w/2)-150 + "px";iDiv9.style.top = (h/2)-150 + "px";iDiv9.style.width = "300px";iDiv9.style.height = "300px";boxWrapper.appendChild(iDiv9);DOM_img.src = "img/anim/frame_7.jpg"; iDiv9.appendChild(DOM_img);}
+		if(frame_pos==10){iDiv10.style.display = 'block';iDiv10.style.position = 'absolute';iDiv10.style.left = (w/2)-150 + "px";iDiv10.style.top = (h/2)-150 + "px";iDiv10.style.width = "300px";iDiv10.style.height = "300px";boxWrapper.appendChild(iDiv10);DOM_img.src = "img/anim/frame_8.jpg"; iDiv10.appendChild(DOM_img);}
+		if(frame_pos==11){iDiv11.style.display = 'block';iDiv11.style.position = 'absolute';iDiv11.style.left = (w/2)-150 + "px";iDiv11.style.top = (h/2)-150 + "px";iDiv11.style.width = "300px";iDiv11.style.height = "300px";boxWrapper.appendChild(iDiv11);DOM_img.src = "img/anim/frame_9.jpg"; iDiv11.appendChild(DOM_img);}
+		if(frame_pos==12){iDiv12.style.display = 'block';iDiv12.style.position = 'absolute';iDiv12.style.left = (w/2)-150 + "px";iDiv12.style.top = (h/2)-150 + "px";iDiv12.style.width = "300px";iDiv12.style.height = "300px";boxWrapper.appendChild(iDiv12);DOM_img.src = "img/anim/frame_10.jpg";iDiv12.appendChild(DOM_img);}
+		if(frame_pos==13){iDiv13.style.display = 'block';iDiv13.style.position = 'absolute';iDiv13.style.left = (w/2)-150 + "px";iDiv13.style.top = (h/2)-150 + "px";iDiv13.style.width = "300px";iDiv13.style.height = "300px";boxWrapper.appendChild(iDiv13);DOM_img.src = "img/anim/frame_11.jpg";iDiv13.appendChild(DOM_img);}
+		if(frame_pos==14){iDiv14.style.display = 'block';iDiv14.style.position = 'absolute';iDiv14.style.left = (w/2)-150 + "px";iDiv14.style.top = (h/2)-150 + "px";iDiv14.style.width = "300px";iDiv14.style.height = "300px";boxWrapper.appendChild(iDiv14);DOM_img.src = "img/anim/frame_12.jpg";iDiv14.appendChild(DOM_img);}
+		if(frame_pos==15){iDiv15.style.display = 'block';iDiv15.style.position = 'absolute';iDiv15.style.left = (w/2)-150 + "px";iDiv15.style.top = (h/2)-150 + "px";iDiv15.style.width = "300px";iDiv15.style.height = "300px";boxWrapper.appendChild(iDiv15);DOM_img.src = "img/anim/frame_13.jpg";iDiv15.appendChild(DOM_img);}
+		if(frame_pos==16){iDiv16.style.display = 'block';iDiv16.style.position = 'absolute';iDiv16.style.left = (w/2)-150 + "px";iDiv16.style.top = (h/2)-150 + "px";iDiv16.style.width = "300px";iDiv16.style.height = "300px";boxWrapper.appendChild(iDiv16);DOM_img.src = "img/anim/frame_14.jpg";iDiv16.appendChild(DOM_img);}
+		if(frame_pos==17){iDiv17.style.display = 'block';iDiv17.style.position = 'absolute';iDiv17.style.left = (w/2)-150 + "px";iDiv17.style.top = (h/2)-150 + "px";iDiv17.style.width = "300px";iDiv17.style.height = "300px";boxWrapper.appendChild(iDiv17);DOM_img.src = "img/anim/frame_15.jpg";iDiv17.appendChild(DOM_img);}
+		if(frame_pos==18){iDiv18.style.display = 'block';iDiv18.style.position = 'absolute';iDiv18.style.left = (w/2)-150 + "px";iDiv18.style.top = (h/2)-150 + "px";iDiv18.style.width = "300px";iDiv18.style.height = "300px";boxWrapper.appendChild(iDiv18);DOM_img.src = "img/anim/frame_16.jpg";iDiv18.appendChild(DOM_img);}
+		if(frame_pos==19){iDiv19.style.display = 'block';iDiv19.style.position = 'absolute';iDiv19.style.left = (w/2)-150 + "px";iDiv19.style.top = (h/2)-150 + "px";iDiv19.style.width = "300px";iDiv19.style.height = "300px";boxWrapper.appendChild(iDiv19);DOM_img.src = "img/anim/frame_17.jpg";iDiv19.appendChild(DOM_img);}
+		if(frame_pos==20){iDiv20.style.display = 'block';iDiv20.style.position = 'absolute';iDiv20.style.left = (w/2)-150 + "px";iDiv20.style.top = (h/2)-150 + "px";iDiv20.style.width = "300px";iDiv20.style.height = "300px";boxWrapper.appendChild(iDiv20);DOM_img.src = "img/anim/frame_18.jpg";iDiv20.appendChild(DOM_img);}
+		if(frame_pos==21){iDiv21.style.display = 'block';iDiv21.style.position = 'absolute';iDiv21.style.left = (w/2)-150 + "px";iDiv21.style.top = (h/2)-150 + "px";iDiv21.style.width = "300px";iDiv21.style.height = "300px";boxWrapper.appendChild(iDiv21);DOM_img.src = "img/anim/frame_19.jpg";iDiv21.appendChild(DOM_img);}
+		if(frame_pos==22){iDiv22.style.display = 'block';iDiv22.style.position = 'absolute';iDiv22.style.left = (w/2)-150 + "px";iDiv22.style.top = (h/2)-150 + "px";iDiv22.style.width = "300px";iDiv22.style.height = "300px";boxWrapper.appendChild(iDiv22);DOM_img.src = "img/anim/frame_20.jpg";iDiv22.appendChild(DOM_img);}
+		if(frame_pos==23){iDiv23.style.display = 'block';iDiv23.style.position = 'absolute';iDiv23.style.left = (w/2)-150 + "px";iDiv23.style.top = (h/2)-150 + "px";iDiv23.style.width = "300px";iDiv23.style.height = "300px";boxWrapper.appendChild(iDiv23);DOM_img.src = "img/anim/frame_21.jpg";iDiv23.appendChild(DOM_img);}
+		if(frame_pos==24){iDiv24.style.display = 'block';iDiv24.style.position = 'absolute';iDiv24.style.left = (w/2)-150 + "px";iDiv24.style.top = (h/2)-150 + "px";iDiv24.style.width = "300px";iDiv24.style.height = "300px";boxWrapper.appendChild(iDiv24);DOM_img.src = "img/anim/frame_22.jpg";iDiv24.appendChild(DOM_img);}
+		if(frame_pos==30){iDiv25.style.display = 'block';iDiv25.style.position = 'absolute';iDiv25.style.left = (w/2)-150 + "px";iDiv25.style.top = (h/2)-150 + "px";iDiv25.style.width = "300px";iDiv25.style.height = "300px";iDiv25.style.opacity = "0.1";boxWrapper.appendChild(iDiv25);DOM_img.src = "img/anim/frame_23.jpg";iDiv25.appendChild(DOM_img);}
+		if(frame_pos==31){iDiv25.style.opacity = "0.2";}
+		if(frame_pos==32){iDiv25.style.opacity = "0.3";}
+		if(frame_pos==33){iDiv25.style.opacity = "0.4";}
+		if(frame_pos==34){iDiv25.style.opacity = "0.5";}
+		if(frame_pos==35){iDiv25.style.opacity = "0.6";}
+		if(frame_pos==36){iDiv25.style.opacity = "0.7";}
+		if(frame_pos==37){iDiv25.style.opacity = "0.8";}
+		if(frame_pos==38){iDiv25.style.opacity = "0.9";}
+		if(frame_pos==39){iDiv25.style.opacity = "1.0";}
+
+
 
 		frame_pos++;
 	}
