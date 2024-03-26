@@ -4065,7 +4065,7 @@ function windowopen(url)
 					infoLogin();
 
 					window.localStorage.setItem("estou_logado","1");
-					window.localStorage.setItem("APPVersion","1.0.8");
+					window.localStorage.setItem("APPVersion","1.0.9");
 
 
 
